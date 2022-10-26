@@ -44,7 +44,7 @@ header{
     margin-right: auto;
 }
 
- #Textbox{
+ #cityInput{
     margin: 10px;
     height:50px;
     width:400px;
@@ -56,6 +56,7 @@ header{
     margin-right:auto;
 }
 #searchButton{
+    width:80px;
     height:50px;
     background-color: dodgerblue;
     border-radius: 10px;

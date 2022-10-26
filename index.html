@@ -11,30 +11,34 @@
         <h1>
             🌧️Web Of Weather🌧️
         </h1>
-
+       <h2 id="timeDate"></h2>
     </header>
 </head>
 
 <body>
+    <!--image of the sky with clouds taken by me -->
     <img id="clearSky" src="./assets/bettersky.jpg" alt="image of the sky and a boat">
 
 
 
-    <h3 id="Para1">5 Days Weather Forecast</h3>
-    <p id="inputContainer">City: <input type="text" id="cityInput"></p>
-    <button type="button" id="searchButton">search</button>
+<!--lets you know where the user will type the city of their choice-->
+    <p id="inputContainer">City: <input type="text" id="cityInput"> <button type="button" id="searchButton">search</button> </p>
+   
+    <h2>5 day forcast in</h2>
     <h2 id="cityName"></h2>
-
+   <!--where the api information will be displayed-->
     <main id="searchDisplay">
         <section class="icons">
-            <p class="weather" id="day1"></p>
+            <!--where the icon of the weather will be shown-->
             <div class="image"><img src="" class="imgClass" id="img1"></div>
-            <p class="minValues" id="forecast1Minimum"></p>
-            <p class="maxValues" id="forecast1Maximum"></p>
         </section>
 
     
     </main>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
 
