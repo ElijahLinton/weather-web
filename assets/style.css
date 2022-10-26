@@ -37,11 +37,11 @@ header{
 
 #searchDisplay{
     background-color: cadetblue;
-    height: 400px;
-    width:70em ;
+    height: 65em;
+    width: 30em;
     border-radius: 10px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
 }
 
  #Textbox{
@@ -55,7 +55,7 @@ header{
     margin-left: auto;
     margin-right:auto;
 }
-#search{
+#searchButton{
     height:50px;
     background-color: dodgerblue;
     border-radius: 10px;

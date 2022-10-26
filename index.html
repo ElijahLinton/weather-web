@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Document</title>
-    <header><h1>🌧️Web Of Weather🌧️</h1></header>
+    <header>
+        <h1>
+            🌧️Web Of Weather🌧️
+        </h1>
+
+    </header>
 </head>
 
 <body>
-    
-
     <img id="clearSky" src="./assets/bettersky.jpg" alt="image of the sky and a boat">
 
-    <form id="get-weather" action="">
-    <input type="text" id="Textbox">
-    <button id="search" type="submit">search</button>
-    </form>
-    <div id="searchDisplay">
-        <h2 id="city">current weather Denver</h2>
-        <div id="temp">51 C</div>
-        <img src="" alt="" class="icon">
-        <div class="description">cloudy</div>
-        <div class="humidity">humidity:60%</div>
-        <div class="wind">wind speed:6.2 km/h</div>
-    </div>
+
+
+    <h3 id="Para1">5 Days Weather Forecast</h3>
+    <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+    <button type="button" id="searchButton">search</button>
+    <h2 id="cityName"></h2>
+
+    <main id="searchDisplay">
+        <section class="icons">
+            <p class="weather" id="day1"></p>
+            <div class="image"><img src="" class="imgClass" id="img1"></div>
+            <p class="minValues" id="forecast1Minimum"></p>
+            <p class="maxValues" id="forecast1Maximum"></p>
+        </section>
+
+    
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./assets/script.js"></script>
+
 </body>
+
 </html>
