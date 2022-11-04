@@ -1,6 +1,7 @@
 // function that gathers api information and displays it on the screen
 var searchButton = document.getElementById('searchButton') 
-
+var searchAgain = document.getElementById('searchagain')
+//changed ther function to be declared once
 searchButton.addEventListener("click", function(){
     var nameOfCity = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
@@ -25,7 +26,7 @@ searchButton.addEventListener("click", function(){
                  document.querySelector('.searchDisplay').innerHTML += forecast
                   
                 })
-                 document.querySelector('.searchDisplay').innerHTML += timeOfCity
+                 
                
             })
          
@@ -38,7 +39,10 @@ const textArea = $(this).siblings('#cityInput').val();
                  localStorage.setItem('city', textArea);
 
 
-
+searchAgain.style.display = "block"
+$('#searchagain').on('click',function(){
+    location.reload();
+})
 },{once:true})
 
 window.onload = function(){
@@ -54,3 +58,4 @@ $("#clearButton").on("click", function(){
 localStorage.clear('city')
 location.reload();
 })
+

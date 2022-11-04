@@ -76,3 +76,11 @@ header{
     height:50px;
     border-radius: 10px;
 }
+#searchagain{
+    width:80px;
+    height:50px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
