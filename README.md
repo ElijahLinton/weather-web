@@ -19,7 +19,7 @@ N/A
 Heres the step for step instruction on how to properly use the weather web.First you will see a text box type in the city you wish to learn about the weather on. then click the search button and then first you will see the information in the same 5 sentences.
 and first you will see an icon, description, temperature, humidity, and the wind. now you know all of the information make sure to put it to use and stay safe!  
 ## Screenshot
-[webpage screenshot](assets\weatherscreeenshot.PNG)
+[webpage screenshot](https://lh3.googleusercontent.com/xEPAL35cmV5MvvhkA66gmGk-emg8VhhogAs1bR-Sh1yQhEk2mg1dE-gTmNs6t7XYtLAyPumT412dcNfrQcQerCJU_mJrkJ1qxbX1FGZ-gJ2wA5C4n_xJqjnOBhMYPej6qdBGBdFd65nTaQg5Li44CJMs6QmPTCrs8jWc1jHbSgnvzhMzYa9ohsaax0YLZZbp9nX_P02sDUhKPQYH4byJp3ub9nimiKZMZZpt1b3Bb1_P5lvHKSSO4Ifg-uj6ncB1HvRWHJ-8y2E1POu5GDE9XozlcWiGqP2vkj0JqAeaZiNi6A4fcJZF51UlI9TBy3isiTJ67hYQEOGQ8NBQA9DGvOGEPyTt8nbtXjrgM-fHxUC72_zZgqCR767rTMM5eiPwDGHXniIHmwjgYUz2jjZavHxooDXZ9aDfv8lBRtt9TneqdFiiv0kPgF7TZspW9j1mTMaxY3HO57xGFfgWgqeOwSjCYyoMQl557dz6Imeywc6gWV42eOOWVbRhq5z4Gip9ub5PtezX2_bAnq1uA3vXjNGJ0jtU7kV7e4_2KCjhcd6DdWvM52_pBhGJzttg1NqFNYhpC_Id2jftae1vm6LCmcqsCLcvG5lUBjGYDMId-LHRNiiJWELYl7FJhkINBlRUjAT1sxYX7oxtxGKEichuzA5n0JihxjuWQvzI5uccU4ZewipfamVR68U4g7I-x0Wz3QpAX9e1J84_K8eM94J5HADCKPSmqWGtsGPiyFxYW6MXrDcTxn3VJjsuc3VBXaBXJ1ZHR_YDUTRcyYzsPDmQRc4geLetpx1YCLDSCQCyDVP7pjph32VdMuHQWrICiyWWIu7MRv6kaoAeXx9k43JKHOLR8JqoDyFF1GrLL-QfgbdFVWenB_FAuyxN7Da2a4nyoY7DOCWx5I1jTbMFho1lKdtMXBxzdWUMBIXfjH47E7UJG7TbizbdXoCjKcvtoP8O7M2q1yaIqLP6u68rtCE=w870-h930-no?authuser=0)
 
 ## Link
 [The link to the webpage.](https://elijahlinton.github.io/weather-web/)

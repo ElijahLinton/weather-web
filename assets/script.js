@@ -1,6 +1,7 @@
 // function that gathers api information and displays it on the screen
-function recieveData() {
+var searchButton = document.getElementById('searchButton') 
 
+searchButton.addEventListener("click", function(){
     var nameOfCity = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
     cityName.textContent = nameOfCity.value;
@@ -9,59 +10,47 @@ function recieveData() {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            var allSections = document.querySelectorAll(".icons")
-            var i=0
-            // for each function that displays all  5 day forcast information on the webpage
-            allSections.forEach(box =>{
 
-                data.list.forEach(item =>{
-                    var par = document.createElement('h2')
-                    par.textContent ="Description: " + item.weather[0].description
-                    box.appendChild(par)
+                const list =  data.list
+                list.map((item)=> {
+                 const description = item.weather[0].description
+                 const Temperature =item.main.temp
+                 const wind = item.wind.speed
+                 const humidity = item.main.humidity
+                 const icon = "http://openweathermap.org/img/wn/"+ item.weather[0].icon +".png";
+                 
+                 const forecast = ` <img src="${icon}"> <h3>description: ${description}</h3>
+                 <h3>temperature: ${Temperature}</h3> 
+                 <h3>wind: ${wind}</h3> <h3>humidity: ${humidity}</h3>`
+                 document.querySelector('.searchDisplay').innerHTML += forecast
+                  
                 })
-
-
-                data.list.forEach(item =>{
-                    var p = document.createElement('h2')
-                    p.textContent = "Temperature: " + item.main.temp
-                    box.appendChild(p)
-                })
-
-                data.list.forEach(item =>{
-                    var par = document.createElement('h2')
-                    par.textContent ="Humidity: " + item.main.humidity + "%"
-                    box.appendChild(par)
-                })
-
-                data.list.forEach(item =>{
-                    var par = document.createElement('h2')
-                    par.textContent ="Wind " + item.wind.speed + "km/h"
-                    box.appendChild(par)
-                })
-
-                
-                    document.getElementById("img1").src = "http://openweathermap.org/img/wn/"+
-                    data.list[i].weather[0].icon
-                    +".png";
-                
-                    
-
+                 document.querySelector('.searchDisplay').innerHTML += timeOfCity
+               
             })
          
-
+       
           
 var timeDate = moment();
                     $("#timeDate").text(timeDate.format("MMMM Do YYYY, HH:mm a"))
 
+const textArea = $(this).siblings('#cityInput').val();
+                 localStorage.setItem('city', textArea);
 
 
 
+},{once:true})
 
+window.onload = function(){
+ $('#searches').text(localStorage.getItem('city'));
 
-        })
-
+ 
+           
 }
-
-
+     
 //listener even that calls the recieveData function to the section of the html page
-$("#searchButton").on("click", recieveData)
+
+$("#clearButton").on("click", function(){
+localStorage.clear('city')
+location.reload();
+})
